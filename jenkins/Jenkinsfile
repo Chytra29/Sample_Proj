@@ -1,8 +1,11 @@
-node {
-    
+pipeline {
+    agent any
+    Stages {
     
     stage ('Clone') {
+        Steps{
         	echo "Cloining ********************"
+             }
         }
     
     
@@ -13,7 +16,7 @@ node {
     
     
     
-    
+    }
     
     
     
