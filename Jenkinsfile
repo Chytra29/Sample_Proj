@@ -10,8 +10,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 echo "The maven version used is"
-                echo ${maven}
-                bat 'mvn --version'
+                bat 'mvn clean install'
             }
         }
         stage('Test') {
