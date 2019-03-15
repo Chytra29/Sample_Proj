@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                echo "The maven version used is ${env.maven}"
+                echo "The maven version used is ${M2_HOME}"
                 
                  bat 'mvn --version'
             }
