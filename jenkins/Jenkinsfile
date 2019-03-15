@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 echo "The maven version used is"
-                echo $maven
+                echo ${maven}
                 bat 'mvn --version'
             }
         }
