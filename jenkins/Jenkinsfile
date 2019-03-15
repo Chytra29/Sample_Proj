@@ -9,6 +9,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                echo "The maven version used is"
+                echo $maven
                 sh 'mvn --version'
             }
         }
