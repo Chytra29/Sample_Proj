@@ -12,12 +12,11 @@ pipeline {
                 echo "The maven version used is ${M2_HOME}"
                 
                  bat 'mvn --version'
-                 dir("${JENKINS_HOME}\${WORKSPACE}")
-                {
-                    bat "cd"
-                    ehco "Running mvn clean install"
-                    bat 'mvn clean install'
-                }
+                 echo "The current directory is "
+                 bat "cd"
+                 ehco "Running mvn clean install"
+                 bat 'mvn clean install'
+                
                     
             }
         }
