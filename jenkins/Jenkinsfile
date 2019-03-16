@@ -14,7 +14,7 @@ pipeline {
                  bat 'mvn --version'
                  echo "The current directory is "
                  bat "cd"
-                 ehco "Running mvn clean install"
+                 echo "Running mvn clean install"
                  bat 'mvn clean install'
                 
                     
