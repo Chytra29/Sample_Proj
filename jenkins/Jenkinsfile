@@ -16,7 +16,7 @@ pipeline {
                 {
                     bat "cd"
                     ehco "Running mvn clean install"
-                    bat mvn clean install
+                    bat 'mvn clean install'
                 }
                     
             }
